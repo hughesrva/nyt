@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Page Title</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
+        crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU"
+        crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" media="screen" href="../nyt/assets/css/style.css" />
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+        crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <!-- overall container -->
+    <div class="container">
+        <!-- overall row -->
+        <div class="row">
+
+            <!-- content column -->
+            <div class="col-md-12">
+                <div class="row" id="headerRow">
+                    <h1 id="headerText"><i class="fas fa-newspaper"></i>New York Times Search</h1>
+                </div>
+                <div class="row" id="searchRow">
+                    <div class="form-group" id="searchDiv">
+                        <div class="searchHeader">
+                            <h2>Search Parameters</h2>
+                        </div>
+
+                        <label for="searchInput">Search Term:</label>
+                        <input type="search" class="form-control" id="searchInput">
+                        <label for="resultsNumber">Number of Records to Retrieve:</label>
+                        <select id="resultsNumber" class="form-control">
+                            <option>1</option>
+                            <option>5</option>
+                            <option>10</option>
+                        </select>
+                        <label for="startYearSel">Start Year (Optional):</label>
+                        <input type="search" class="form-control" id="startYearSel">
+                        <label for="endYearSel">End Year (Optional):</label>
+                        <input type="search" class="form-control" id="endYearSel">
+                        <button id="searchBtn">Search</button>
+                        <button id="clearBtn">Clear Results</button>
+                    </div>
+                </div>
+                <div class="row" id="resultsRow">
+                    <div id="resultsHeader">
+                        <h2>Top Articles</h2>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="../nyt/assets/js/ours.js"></script>
+
+</body>
+
+</html>
